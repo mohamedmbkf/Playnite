@@ -45,11 +45,6 @@
                     <ContentControl ContentTemplate="{DynamicResource MainMenuHeaderTemplate}"
                                     Focusable="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
-                    <pctrls:ButtonEx x:Name="PART_ButtonPickRandomGame"
-                                     ContentTemplate="{DynamicResource MainMenuRandomGameButtonTemplate}"
-                                     Command="{Binding SelectRandomGameCommand}"
-                                     pbeh:FocusBahaviors.OnVisibilityFocus="True"
-                                     AutomationProperties.Name="{DynamicResource LOCMenuSelectRandomGame}"/>
                     <pctrls:ButtonEx x:Name="PART_ButtonUpdateLibrary"
                                      ContentTemplate="{DynamicResource MainMenuLibUpdateButtonTemplate}"
                                      Command="{Binding UpdateGamesCommand}"
@@ -106,18 +101,6 @@
                                   AutomationProperties.Name="{DynamicResource LOCMenuRestartSystem}"/>
 
                     <Canvas Height="40" />
-                    <pctrls:ButtonEx x:Name="PART_ButtonFeedback"
-                                     ContentTemplate="{DynamicResource MainMenuHelpButtonTemplate}"
-                                     Command="{Binding OpenHelpCommand}"
-                                     AutomationProperties.Name="{DynamicResource LOCMenuHelpTitle}" />
-                    <pctrls:ButtonEx x:Name="PART_ButtonPatreon"
-                                     ContentTemplate="{DynamicResource MainMenuPatreonButtonTemplate}"
-                                     Command="{Binding OpenPatreonCommand}"
-                                     AutomationProperties.Name="{DynamicResource LOCMenuPatreonSupport}" />
-                    <pctrls:ButtonEx x:Name="PART_ButtonKofi"
-                                     ContentTemplate="{DynamicResource MainMenuKofiButtonTemplate}"
-                                     Command="{Binding OpenKofiCommand}"
-                                     AutomationProperties.Name="{DynamicResource LOCMenuKofiSupport}" />
                     <pctrls:ButtonEx x:Name="PART_ButtonMinimize"
                                      ContentTemplate="{DynamicResource MainMenuMinimizeButtonTemplate}"
                                      Command="{Binding MinimizeCommand}"                                     
